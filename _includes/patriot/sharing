@@ -1,0 +1,8 @@
+{% if site.safe and site.patriot.sharing.provider and page.patriot.sharing != false %}
+
+{% case site.patriot.sharing.provider %}
+{% when "custom" %}
+  {% include custom/sharing %}
+{% endcase %}
+
+{% endif %}
